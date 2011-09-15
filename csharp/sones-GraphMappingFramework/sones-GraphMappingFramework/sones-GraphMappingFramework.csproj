@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBF75248-F3E7-4813-966B-026D2BF43AEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sones.GraphMappingFramework</RootNamespace>
+    <AssemblyName>sones-GraphMappingFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientUtils\EdgeTypeCreator.cs" />
+    <Compile Include="ClientUtils\EdgeTypeStore.cs" />
+    <Compile Include="ClientUtils\ServiceToken.cs" />
+    <Compile Include="ClientUtils\VertexTypeCreator.cs" />
+    <Compile Include="ClientUtils\VertexTypeStore.cs" />
+    <Compile Include="DBObjects\Definitions\AttributeDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\BinaryPropertyDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\IncomingEdgeDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\IndexDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\OutgoingEdgeDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\PropertyDefinition.cs" />
+    <Compile Include="DBObjects\Definitions\UniqueDefinition.cs" />
+    <Compile Include="DBObjects\Edges\IEdge.cs" />
+    <Compile Include="DBObjects\Edges\IHyperEdge.cs" />
+    <Compile Include="DBObjects\Edges\ISingleEdge.cs" />
+    <Compile Include="DBObjects\Edges\SingleEdge.cs" />
+    <Compile Include="DBObjects\EdgeType\EdgeType.cs" />
+    <Compile Include="DBObjects\EdgeType\IEdgeType.cs" />
+    <Compile Include="DBObjects\Vertex\IVertex.cs" />
+    <Compile Include="DBObjects\VertexType\IVertexType.cs" />
+    <Compile Include="DBObjects\VertexType\VertexType.cs" />
+    <Compile Include="ErrorHandling\CannotInheritFromVertexException.cs" />
+    <Compile Include="ErrorHandling\TransactionException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceReference\sonesRemoteAPI.cs" />
+    <Compile Include="sonesGraphDB.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+H:\sones\sones-GraphMappingFramework\csharp\sones-GraphMappingFramework\sones-GraphMappingFramework\obj\Debug\ResolveAssemblyReference.cache

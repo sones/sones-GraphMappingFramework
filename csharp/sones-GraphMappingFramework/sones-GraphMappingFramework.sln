@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sones-GraphMappingFramework", "sones-GraphMappingFramework\sones-GraphMappingFramework.csproj", "{DBF75248-F3E7-4813-966B-026D2BF43AEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF75248-F3E7-4813-966B-026D2BF43AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF75248-F3E7-4813-966B-026D2BF43AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF75248-F3E7-4813-966B-026D2BF43AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF75248-F3E7-4813-966B-026D2BF43AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
